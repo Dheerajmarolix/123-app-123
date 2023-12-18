@@ -1,0 +1,6 @@
+expression = atom   | list
+atom       = number | symbol    
+number     = [+-]?['0'-'9']+
+symbol     = ['A'-'Z']['A'-'Z''0'-'9'].*
+list       = '(', expression*, ')'
+
